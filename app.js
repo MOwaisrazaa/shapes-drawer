@@ -47,7 +47,7 @@ function clickColor(div){
     } else{
         
         let bg = `rgba(${color()},${color()},${color()},0.5)`
-        div.innerHTML += `<div onclick="changeColor(this)" class="shapes ${activeShape}" style="position: absolute; top:${y}px;
+        div.innerHTML += `<div onclick="changeColor(this)" class="shape ${activeShape}" style="position: absolute; top:${y}px;
         left:${x}px; height: 100px; width: 100px; background-color: ${bg};">
         </div>`
     console.log(activeShape)
@@ -62,5 +62,9 @@ function color(){
 }
 
 function changeColor(div){
-    div.style.backgroundColor = activeColor
+
+        div.style.backgroundColor = activeColor
+    
+
+
 }
