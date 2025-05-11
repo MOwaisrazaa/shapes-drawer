@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes-drawer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="toolbar">
+
+        <div class="shapes">
+            <div onclick="clickShape(this)" id="circle"></div>
+            <div onclick="clickShape(this)" id="square"></div>
+            <div onclick="clickShape(this)" id="rectengle"></div>
+            <div onclick="clickShape(this)" id="oval"></div>
+        </div>
+
+        <div class="colors">
+            <div onclick="clickColor(this)" id="red"></div>
+            <div onclick="clickColor(this)" id="teal"></div>
+            <div onclick="clickColor(this)" id="green"></div>
+            <div onclick="clickColor(this)" id="orange"></div>
+        </div>
+    </div>
+
+
+    <div id="ground" onclick="drawShape(this, event)">
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
